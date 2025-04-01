@@ -3,7 +3,7 @@ module github.com/tiendat-go/registry-service
 go 1.24.1
 
 require (
-	github.com/tiendat-go/common-service v1.0.0
+	github.com/tiendat-go/common-service v1.0.3
 	github.com/tiendat-go/proto-service v1.0.7
 	google.golang.org/grpc v1.71.0
 )

@@ -11,7 +11,7 @@ import (
 	frt "github.com/tiendat-go/common-service/utils/format"
 	pb "github.com/tiendat-go/proto-service/gen/registry/v1"
 	grpcController "github.com/tiendat-go/registry-service/internal/controller/grpc"
-	"github.com/tiendat-go/registry-service/internal/service"
+	"github.com/tiendat-go/registry-service/internal/core/service"
 	"google.golang.org/grpc"
 )
 

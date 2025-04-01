@@ -8,7 +8,7 @@ import (
 
 	frt "github.com/tiendat-go/common-service/utils/format"
 	httpController "github.com/tiendat-go/registry-service/internal/controller/http"
-	"github.com/tiendat-go/registry-service/internal/service"
+	"github.com/tiendat-go/registry-service/internal/core/service"
 )
 
 func main() {

@@ -4,7 +4,7 @@ import (
 	"context"
 
 	pb "github.com/tiendat-go/proto-service/gen/registry/v1"
-	"github.com/tiendat-go/registry-service/internal/service"
+	"github.com/tiendat-go/registry-service/internal/core/service"
 )
 
 type RegistryController struct {
