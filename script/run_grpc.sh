@@ -1,0 +1,1 @@
+SERVICE_PORT=50051 go run cmd/grpc/runner.go

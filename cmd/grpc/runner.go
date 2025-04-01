@@ -10,6 +10,7 @@ import (
 
 	frt "github.com/tiendat-go/common-service/utils/format"
 	pb "github.com/tiendat-go/proto-service/gen/registry/v1"
+	grpcController "github.com/tiendat-go/registry-service/internal/controller/grpc"
 	"github.com/tiendat-go/registry-service/internal/service"
 	"google.golang.org/grpc"
 )
@@ -17,7 +18,8 @@ import (
 func main() {
 	port := frt.GetString(os.Getenv("SERVICE_PORT"), "50051")
 
-	server := service.NewRegistryServer()
+	service := service.NewRegistryService()
+	server := grpcController.NewRegistryController(service)
 
 	lis, err := net.Listen("tcp", fmt.Sprintf(":%v", port))
 	if err != nil {
